@@ -1,6 +1,9 @@
 FROM centos7
 LABEL maintainer="Alessandro Dolci dolci.alessandro94@gmail.com"
 
+ENV sites="mva"
+ENV ssl="no"
+
 RUN yum update -y && yum install nginx -y
 RUN systemctl enable nginx
 
